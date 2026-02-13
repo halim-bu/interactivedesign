@@ -1,0 +1,74 @@
+/* font: import ================================================ */
+@font-face {
+  font-family: 'variableFont';
+  src: url('./font/RobotoFlex.ttf') format('truetype');
+}
+
+
+/* Layout ================================================ */
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-color 1s ease-in-out, background-image 1s ease-in-out;
+}
+
+
+/* text ================================================ */
+#mainText1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  rotate: 0deg;
+
+  font-family: 'variableFont';
+  font-size: 200px;
+  color: black;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 200px;
+  text-wrap: nowrap;
+  
+	font-variation-settings: "opsz" 144, "wght" 1000, "GRAD" 150, "wdth" 151, "slnt" 0, "XOPQ" 96, "YOPQ" 79, "XTRA" 468, "YTUC" 712, "YTLC" 514, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  transition: rotate 1s ease-in-out, font-size 1s ease-in-out, font-variation-settings 1s ease-in-out;
+}
+
+#mainText2 {
+  font-family: 'variableFont';
+  font-size: 200px;
+
+  transition: font-variation-settings 1s ease-in-out, color 1s ease-in-out;
+}
+
+.variable1 {
+  font-variation-settings: "opsz" 8, "wght" 100, "GRAD" -200, "wdth" 151, "slnt" -10, "XOPQ" 96, "YOPQ" 79, "XTRA" 468, "YTUC" 712, "YTLC" 514, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  color: red;
+}
+
+.variable2 {
+  font-variation-settings: "opsz" 8, "wght" 100, "GRAD" -200, "wdth" 151, "slnt" -10, "XOPQ" 96, "YOPQ" 79, "XTRA" 468, "YTUC" 712, "YTLC" 514, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  color: blue;
+}
+
+
+/* Image ================================================ */
+#image {
+  position: fixed;
+  width: 400px;
+}
+
+
